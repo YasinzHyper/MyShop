@@ -97,7 +97,7 @@ class _OrderButtonState extends State<OrderButton> {
     final scaffoldMessenger = ScaffoldMessenger.of(context);
     return MaterialButton(
       child: _isLoading ? CircularProgressIndicator() : Text('PLACE ORDER'),
-      color: Theme.of(context).accentColor,
+      color: Theme.of(context).colorScheme.secondary,
       onPressed: (widget.cart.totalAmount <= 0 || _isLoading)
           ? null
           : () async {
@@ -117,7 +117,7 @@ class _OrderButtonState extends State<OrderButton> {
                     'Order Placed!',
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                      color: Theme.of(context).accentColor,
+                      color: Theme.of(context).colorScheme.secondary,
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
                     ),

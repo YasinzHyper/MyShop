@@ -55,8 +55,6 @@ class MyApp extends StatelessWidget {
         builder: (ctx, authData, _) => MaterialApp(
           title: 'MyShop',
           theme: ThemeData(
-            primarySwatch: Colors.indigo,
-            accentColor: Colors.orange,
             backgroundColor: Color.fromARGB(255, 255, 246, 220),
             textTheme: TextTheme(
               headline6: TextStyle(
@@ -73,6 +71,8 @@ class MyApp extends StatelessWidget {
                 TargetPlatform.iOS: CustomPageTransitionBuilder(),
               },
             ),
+            colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.indigo)
+                .copyWith(secondary: Colors.orange),
           ),
           home: authData.isAuth
               ? ProductsOverviewScreen()

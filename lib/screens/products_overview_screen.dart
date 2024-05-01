@@ -109,7 +109,7 @@ class _ProductsOverviewScreenState extends State<ProductsOverviewScreen> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   CircularProgressIndicator(
-                    color: Theme.of(context).accentColor,
+                    color: Theme.of(context).colorScheme.secondary,
                   ),
                   SizedBox(
                     height: 10,

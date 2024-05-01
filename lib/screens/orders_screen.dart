@@ -62,7 +62,7 @@ class _OrdersScreenState extends State<OrdersScreen> {
                             textAlign: TextAlign.center,
                             style: TextStyle(
                               //backgroundColor: Theme.of(context).primaryColorDark,
-                              color: Theme.of(context).accentColor,
+                              color: Theme.of(context).colorScheme.secondary,
                               fontSize: 25,
                               fontWeight: FontWeight.bold,
                             ),

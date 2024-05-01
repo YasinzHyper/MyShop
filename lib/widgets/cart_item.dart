@@ -61,7 +61,7 @@ class CartItem extends StatelessWidget {
             actions: <Widget>[
               MaterialButton(
                 //color: Color.fromRGBO(154, 243, 255, 1),
-                textColor: Theme.of(context).accentColor,
+                textColor: Theme.of(context).colorScheme.secondary,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(12),
                 ),
@@ -78,7 +78,7 @@ class CartItem extends StatelessWidget {
               ),
               MaterialButton(
                 //color: Color.fromRGBO(154, 243, 255, 1),
-                textColor: Theme.of(context).accentColor,
+                textColor: Theme.of(context).colorScheme.secondary,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(12),
                 ),

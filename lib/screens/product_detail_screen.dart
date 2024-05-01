@@ -31,7 +31,7 @@ class ProductDetailScreen extends StatelessWidget {
         slivers: <Widget>[
           SliverAppBar(
             iconTheme: IconThemeData(
-              color: Theme.of(context).accentColor,
+              color: Theme.of(context).colorScheme.secondary,
             ),
             expandedHeight: 300,
             pinned: true,
