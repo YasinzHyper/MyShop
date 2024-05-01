@@ -13,7 +13,7 @@ class Auth with ChangeNotifier {
   String _userId;
   Timer _authTimer;
   static const params = {
-    'key': 'AIzaSyAHZ8WVy1qT6b2Da6YXZwyZFp0kN3_DzmM',
+    'key': 'Your-API-Key',
   };
 
   bool get isAuth {
@@ -78,7 +78,7 @@ class Auth with ChangeNotifier {
   Future<void> signup(String email, String password) async {
     return _authenticate(email, password, 'signUp');
     // final url = Uri.https('identitytoolkit.googleapis.com',
-    //     '/v1/accounts:signUp?key=AIzaSyAHZ8WVy1qT6b2Da6YXZwyZFp0kN3_DzmM');
+    //     '/v1/accounts:signUp?key=<API-KEY>');
     // final response = await http.post(
     //   url,
     //   body: json.encode({
@@ -92,7 +92,7 @@ class Auth with ChangeNotifier {
   Future<void> login(String email, String password) async {
     return _authenticate(email, password, 'signInWithPassword');
     // final url = Uri.https('identitytoolkit.googleapis.com',
-    //     '/v1/accounts:signInWithPassword?key=AIzaSyAHZ8WVy1qT6b2Da6YXZwyZFp0kN3_DzmM');
+    //     '/v1/accounts:signInWithPassword?key=<API-KEY>');
   }
 
   Future<bool> tryAutoLogin() async {
